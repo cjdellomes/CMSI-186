@@ -20,7 +20,7 @@ Simulates a million trials to determines the probability that at least 2 people 
 ##4. RandomIntegrator
 
 Uses Monte Carlo (Randomized) Integration to find an estimate of the definite integral of an equation. Can be used for polynomial, sine, cosine, tangent, natural log, and base 10 log functions. Input should be lower bound, upper bound, function type, values.
-Example inputL -1.3 5 poly 1 -2.1 3.2.
+Example input: -1.3 5 poly 1 -2.1 3.2.
 Returns definite integral for the polynomial 1-2.1x+3.2x^2 from x=-1.3 to x=5.
 
 ##5. RiemannIntegrator
