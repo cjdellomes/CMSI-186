@@ -1,7 +1,7 @@
 CMSI 186
 ============
 
-This is a collection of code made for LMU's Computer Science Lab class with Dr. Philip Dorin. 
+This is a collection of code made for LMU's Computer Programming Lab class with Dr. Philip Dorin. 
 
 ##1. CountTheDays
 
