@@ -38,23 +38,20 @@ public class MapSolver{
 		mapTable = new boolean[regions][regions];
 
 		//indicates adjacencies with true
-		for (int i = 0; i < adjacencies; i = i + 2) {
-			int first = Integer.parseInt(args[i]);
-			int second = Integer.parseInt(args[i + 1]);
+		for (int i = 0; i < adjacencies; i = i + 2){
+			int border1 = Integer.parseInt(args[i]);
+			int border2 = Integer.parseInt(args[i + 1]);
 
-			mapTable [first][second] = true;
-			mapTable [second][first] = true;
+			mapTable[border1][border2] = true;
+			mapTable[border2][border1] = true;
 		}
 
 		//indicates non adjacencies with false
 		for (int i = 0; i < regions; i++) {
-
 			for (int j = 0; j < regions; j++) {
-				boolean boj = mapTable[i][j];
-
-				if(boj != true) {
-					boj = false;
-
+				boolean box = mapTable[i][j];
+				if(box != true) {
+					box = false;
 				}
 			}
 		}
@@ -106,13 +103,12 @@ public class MapSolver{
 
 		for(int i = 0; i <= 3; i++){ 
 			regionColors[n] = i;
-
 			if (!colorConflict(mapTable, regionColors)) {
 				if (n == regionColors.length - 1){
 					print(regionColors);
 					System.exit(0);
-
-				} else {
+				}
+				else{
 					colorMap(n + 1, regionColors, mapTable);
 
 				}	
