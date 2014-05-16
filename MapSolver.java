@@ -42,8 +42,8 @@ public class MapSolver{
 			int border1 = Integer.parseInt(args[i]);
 			int border2 = Integer.parseInt(args[i + 1]);
 
-			mapTable [border1][border2] = true;
-			mapTable [border2][border1] = true;
+			mapTable[border1][border2] = true;
+			mapTable[border2][border1] = true;
 		}
 
 		//indicates non adjacencies with false
