@@ -6,7 +6,7 @@ public class MapSolver{
 	private static int adjacencies;
 	private static final int REGIONCOLORDEFAULT = 5;
 
-	/** Uses input region number adjacencies, starting at region 0, to color map with 4 colors with no regions of same color touching. */
+	/** Uses input region number adjacencies, starting at region 0, to color map with 4 colors so no regions of same color touching. */
 	public static void main (String[] args){
 
 		MapSolver mp = new MapSolver(args);
@@ -32,13 +32,13 @@ public class MapSolver{
 
 	}
 
-	/** Creates a 2d boolean array to simulate a map. */
+	/** Simulates map using 2d boolean array. */
 	public static void makeMap(String[] args){
 
 		mapTable = new boolean[regions][regions];
 
 		//indicates adjacencies with true
-		for (int i = 0; i < adjacencies; i = i + 2) {
+		for (int i = 0; i < adjacencies; i = i + 2){
 			int border1 = Integer.parseInt(args[i]);
 			int border2 = Integer.parseInt(args[i + 1]);
 
@@ -103,9 +103,8 @@ public class MapSolver{
 
 		for(int i = 0; i <= 3; i++){ 
 			regionColors[n] = i;
-
-			if(!colorConflict(mapTable, regionColors)){
-				if(n == regionColors.length - 1){
+			if (!colorConflict(mapTable, regionColors)) {
+				if (n == regionColors.length - 1){
 					print(regionColors);
 					System.exit(0);
 				}

@@ -1,7 +1,7 @@
 
 public class CountTheDays {
 
-	/* Prints number of days between two dates or that the given date is invalid. */
+	/** Prints number of days between two dates or that the given date is invalid. */
 	public static void main(String[] args) {
 		long long1 = Long.parseLong(args[0]);
 		long long2 = Long.parseLong(args[1]);
@@ -18,7 +18,7 @@ public class CountTheDays {
 		}
 	}
 	
-	/* Returns whether or not a given year is a leap year. */
+	/** Returns whether or not a given year is a leap year. */
 	public static boolean isLeapYear(long year){
 		if(year % 4 == 0){
 			if(year % 100 == 0){
@@ -38,7 +38,7 @@ public class CountTheDays {
 		}
 	}
 	
-	/* Returns the number of days in a given month from a specific year. */
+	/** Returns the number of days in a given month from a specific year. */
 	public static long daysInMonth(long month, long year){
 		int days;
 		if(month == 4 || month == 6 || month == 9 || month == 11){
@@ -58,7 +58,7 @@ public class CountTheDays {
 		return days;
 	}
 	
-	/* Returns whether or not a date is valid. */
+	/** Returns whether or not a date is valid. */
 	public static boolean isValidDate(long month, long day, long year){
 		boolean validM = false;
 		boolean validY = false;
@@ -80,7 +80,7 @@ public class CountTheDays {
 		}
 	}
 	
-	/* Returns number of days between two dates. */
+	/** Returns number of days between two dates. */
 	public static long daysBetween(long month0, long day0, long year0, long month1, long day1, long year1){
 		long dayCount = 0;
 		long determine1 = 0;

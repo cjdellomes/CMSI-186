@@ -4,7 +4,7 @@ public class BirthdaySolver{
 	private static final int RANGEMIN = 1;
 	private static final int RANGEMAX = 365;
 
-	/** Determines probability of at least 2 people out of n people share a birthday. */
+	/** Uses randomization to determine probability of at least 2 people out of n people share a birthday. */
 	public static void main(String[] args){
 
 		BirthdaySolver bs = new BirthdaySolver(Integer.parseInt(args[0]));
@@ -18,7 +18,7 @@ public class BirthdaySolver{
 
 	}
 
-	/** Calculates probability of at least 2 people out of n people share a birthday. */
+	/** Determines probability of at least 2 people out of n people share a birthday by randomizing birthdays */
 	public static double solve(int val){
 
 		double answer;
